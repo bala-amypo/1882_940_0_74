@@ -2,7 +2,7 @@ package com.example.demo.entity;
 import jakarta.persistence.*;
 
 @entity
-@table(name =" students")
+//@table(name =" students")
 
 
 public class Student {
