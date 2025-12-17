@@ -1,11 +1,13 @@
 package com.example.demo.entity;
+import jakarta.persistence.*;
+
 @entity
 @table(name =" students")
 
 
 public class Student {
     @id
-    @generatedvalue(strategy )
+    @generatedvalue(strategy = GenerationType.IDENTITY)
     private long id ;
     private String name;
     private String email;
