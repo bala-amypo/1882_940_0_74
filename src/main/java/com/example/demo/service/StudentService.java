@@ -1,7 +1,7 @@
-package com.example.aiml.service;
+package com.example.demo.service;
 
 
-import com.example.aiml.entity.Student;
+import com.example.demo.entity.Student;
 
 
 public interface StudentService {
