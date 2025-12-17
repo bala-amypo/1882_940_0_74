@@ -1,13 +1,10 @@
-package com.example.demo.serviceimpl;
+package com.example.aiml.service;
 
 
-importorg.springframework.stereotype.Service;
+import com.example.aiml.entity.Student;
 
 
-import org.springframework.stereotype.Service;
-
-import com.example.demo.service.StudentService;
-@Service
-public class StudentServiceImpl implements StudentService {
+public interface StudentService {
+    Student saveStudent(Student student);
 
 }
