@@ -54,7 +54,7 @@ public class Student {
         this.name = name;
         this.email = email;
     }
-
+}
     
 
     
