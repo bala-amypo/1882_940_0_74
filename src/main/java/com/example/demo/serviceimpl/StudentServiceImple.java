@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.Student;
-import com.example.demo.repository.StudentRespository;
+import com.example.demo.repository.StudentRepoitory;
 import com.example.demo.service.StudentService;
 import com.example.demo.exception.ResourceNotFoundException;
 
@@ -16,14 +16,14 @@ public class StudentServiceImple implements StudentService {
      //   this.studentRespository=studentRespository;
     // }
     @Autowired
-    StudentRespository studentRespository;
+    StudentRepository studentRepository;
  
     public Student saveStudent(Student student) {
 
-        return studentRespository.save(student);
+        return studentRepository.save(student);
     }
     public Student getStudentById(Long id){
-        return studentRespository.findById(id)
+        return studentRepository.findById(id)
         .orElseThrow(()-> new ResourceNotFoundException("Student not found"));
     }
 
